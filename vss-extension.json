@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "UpdateNugetDependencyVersions",
+    "name": "Update nuget package dependency versions",
+    "version": "0.1.1",
+    "publisher": "dschuermans",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Update nuget package dependency versions",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "nuget.jpeg"        
+    },
+    "files": [
+        {
+            "path": "UpdateNugetDependencyVersions"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "UpdateNugetDependencyVersions",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "UpdateNugetDependencyVersions"
+            }
+        }
+    ]
+}
